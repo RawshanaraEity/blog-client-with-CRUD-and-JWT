@@ -116,7 +116,7 @@ const NavBar = () => {
                 </label>
                 <ul className="flex items-center gap-2">
                   <li>
-                    <p className="text-xl  font-semibold">{user.displayName}</p>
+                    <p className="text-xl text-white font-semibold">{user.displayName}</p>
                   </li>
                   <li>
                     <button
@@ -142,7 +142,7 @@ const NavBar = () => {
                   className="menu menu-sm dropdown-content mt-3 z-[1] shadow bg-base-100 rounded-box"
                 >
                   <li>
-                  <p className="text-sm font-semibold">{user.displayName}</p>
+                  <p className="text-sm text-white font-semibold">{user.displayName}</p>
                   </li>
                   <li>
                   <button
