@@ -22,9 +22,9 @@ const NavBar = () => {
       <li className="text-white font-medium">
         {" "}
         <NavLink
-          to="/about"
+          to="/addBlog"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "bg-amber-500 text-white" : ""
+            isPending ? "pending" : isActive ? "border-b border-teal-400 text-white" : ""
           }
         >
          Add Blog
@@ -33,9 +33,9 @@ const NavBar = () => {
       <li className="text-white font-medium">
         {" "}
         <NavLink
-          to="/services"
+          to="/allBlogs"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "bg-amber-500 text-white" : ""
+            isPending ? "pending" : isActive ? "border-b border-teal-400 text-white" : ""
           }
         >
           All Blogs
@@ -44,9 +44,9 @@ const NavBar = () => {
       <li className="text-white font-medium">
         {" "}
         <NavLink
-          to="/gallery"
+          to="/featuredBlogs"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "bg-amber-500 text-white" : ""
+            isPending ? "pending" : isActive ? "border-b border-teal-400 text-white" : ""
           }
         >
           Featured Blogs
@@ -55,9 +55,9 @@ const NavBar = () => {
       <li className="text-white font-medium">
         {" "}
         <NavLink
-          to="/contact"
+          to="/wishlist"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "bg-amber-500 text-white" : ""
+            isPending ? "pending" : isActive ? "border-b border-teal-400 text-white" : ""
           }
         >
           Wishlist
@@ -120,7 +120,7 @@ const NavBar = () => {
                   </li>
                   <li>
                     <button
-                      className="btn bg-amber-500 text-white"
+                      className="btn bg-slate-800 border-2 border-teal-400 text-white"
                       onClick={logOut}
                     >
                       LogOut
@@ -146,7 +146,7 @@ const NavBar = () => {
                   </li>
                   <li>
                   <button
-                      className="btn bg-amber-500 w-2/3 mx-auto pt-3 text-white"
+                      className="btn bg-slate-800 border-2 border-teal-400  w-2/3 mx-auto pt-3 text-white"
                       onClick={logOut}
                     >
                       LogOut
