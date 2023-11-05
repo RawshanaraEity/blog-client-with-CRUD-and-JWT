@@ -8,7 +8,7 @@ const NavBar = () => {
 
   const navLinks = (
     <>
-      <li className="text-white font-medium">
+      <li className="text-white font-medium mr-2">
         {" "}
         <NavLink
           to="/"
@@ -19,7 +19,7 @@ const NavBar = () => {
           Home
         </NavLink>
       </li>
-      <li className="text-white font-medium">
+      <li className="text-white font-medium mr-2">
         {" "}
         <NavLink
           to="/addBlog"
@@ -30,7 +30,7 @@ const NavBar = () => {
          Add Blog
         </NavLink>
       </li>
-      <li className="text-white font-medium">
+      <li className="text-white font-medium mr-2">
         {" "}
         <NavLink
           to="/allBlogs"
@@ -41,7 +41,7 @@ const NavBar = () => {
           All Blogs
         </NavLink>
       </li>
-      <li className="text-white font-medium">
+      <li className="text-white font-medium mr-2">
         {" "}
         <NavLink
           to="/featuredBlogs"
@@ -52,7 +52,7 @@ const NavBar = () => {
           Featured Blogs
         </NavLink>
       </li>
-      <li className="text-white font-medium">
+      <li className="text-white font-medium ">
         {" "}
         <NavLink
           to="/wishlist"
@@ -69,7 +69,7 @@ const NavBar = () => {
   return (
     <div>
       <div className="navbar bg-slate-800">
-        <div className="navbar-start">
+        <div className="navbar-start text-white">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
@@ -90,7 +90,7 @@ const NavBar = () => {
             <ul
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow 
-               rounded-box w-52"
+               rounded-box w-36 bg-slate-800"
             >
               {navLinks}
             </ul>
@@ -111,7 +111,7 @@ const NavBar = () => {
             <div className=" flex gap-2">
                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                   <div className="w-10 rounded-full">
-                    <img src={user.photoURL} alt={user.displayName} />
+                    <img src={user.photoURL? user.photoURL : `/public/assets/user.webp`} alt={user.displayName} />
                   </div>
                 </label>
                 <ul className="flex items-center gap-2">
@@ -130,16 +130,16 @@ const NavBar = () => {
               </div>
             </div>
 
-              <div className="md:hidden">
+              <div className="md:hidden ">
               <div className="dropdown dropdown-end">
                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                   <div className="w-10 rounded-full">
-                    <img src={user.photoURL} alt={user.displayName} />
+                    <img src={user.photoURL? user.photoURL : `/public/assets/user.webp`} alt={user.displayName} />
                   </div>
                 </label>
                 <ul
                   tabIndex={0}
-                  className="menu menu-sm dropdown-content mt-3 z-[1] shadow bg-base-100 rounded-box"
+                  className="menu menu-sm dropdown-content mt-3 z-[1] shadow bg-slate-800 rounded-box"
                 >
                   <li>
                   <p className="text-sm text-white font-semibold">{user.displayName}</p>

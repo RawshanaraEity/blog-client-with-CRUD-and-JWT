@@ -2,7 +2,11 @@ import { createContext, useEffect, useState } from "react";
 import {
   GoogleAuthProvider,
   
+  createUserWithEmailAndPassword,
+  
   onAuthStateChanged,
+  
+  signInWithEmailAndPassword,
   
   signInWithPopup,
   signOut,
@@ -26,10 +30,10 @@ const AuthProvider = ({ children }) => {
   };
 
   // signup
-  // const createUser = (email, password) => {
-  //   setLoading(true)
-  //   return createUserWithEmailAndPassword(auth, email, password);
-  // };
+  const createUser = (email, password) => {
+    setLoading(true)
+    return createUserWithEmailAndPassword(auth, email, password);
+  };
 
   // sign in
   const signIn = (email,password) => {
@@ -59,7 +63,7 @@ const logOut = () =>{
 
   const info = {
     googleLogin,
-    // createUser,
+    createUser,
     signIn,
     logOut,
     user,
