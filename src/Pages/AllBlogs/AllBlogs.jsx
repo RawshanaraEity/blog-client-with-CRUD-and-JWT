@@ -1,6 +1,7 @@
 import useBlogs from "../../Hooks/useBlogs";
 import Category from "../../components/Category";
 import Loading from "../../components/Loading";
+import Newslettter from "../Home/Newslettter";
 import BlogCard from "./BlogCard";
 
 
@@ -14,11 +15,11 @@ const AllBlogs = () => {
   }
   return (
     <div>
-      <h1 className="bg-red-300 text-5xl text-center">
-        All Blogs are here {data.length}
+      <h1 className="my-10 text-5xl text-center">
+        All Blogs are here
       </h1>
       <div className="">
-        <div className="w-1/3 mx-auto">
+        <div className="w-[520px] mx-auto ">
           <Category></Category>
         </div>
 
@@ -30,6 +31,7 @@ const AllBlogs = () => {
          </div>
         </div>
       </div>
+      <Newslettter></Newslettter>
     </div>
   );
 };
