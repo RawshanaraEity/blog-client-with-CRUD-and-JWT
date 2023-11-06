@@ -1,7 +1,7 @@
 const Newslettter = () => {
   return (
     <div className="my-10">
-      <div className="hero px-10 h-96 bg-gradient-to-r from-teal-500 to-cyan-500 text-white">
+      <div className="hero px-10 h-96 bg-gradient-to-r from-teal-500  text-white">
         <div className="hero-content flex-col lg:flex-row">
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold">
@@ -12,7 +12,7 @@ const Newslettter = () => {
               to your inbox. It is free!
             </p>
           </div>
-          <div className="card flex-shrink-0 w-full max-w-md border bg-[rgba(104,204,204,0.2)] shadow-2xl ">
+          <div className="card flex-shrink-0 w-full max-w-md border bg-[rgba(135,219,219,0.2)] shadow-2xl ">
             <form className="card-body">
               <div className="form-control">
                 <input
