@@ -47,8 +47,6 @@ const BlogCard = ({ blogs }) => {
     })
   }
 
-
-
   return (
     <div>
       <div className="card bg-base-100 shadow-xl">
