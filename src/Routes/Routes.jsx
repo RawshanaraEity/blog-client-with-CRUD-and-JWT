@@ -9,7 +9,8 @@ import Wishlist from "../Pages/wishlist/Wishlist";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import All from "../Pages/AllBlogs/All";
-import Technology from "../Pages/AllBlogs/Technology";
+import BlogDetails from "../Pages/AllBlogs/BlogDetails";
+
 
 const router = createBrowserRouter([
     {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
         {
             path: '/allBlogs',
             element: <All></All>
+        },
+        {
+            path: '/allBlogs/:id',
+            element: <BlogDetails></BlogDetails>
         },
         {
             

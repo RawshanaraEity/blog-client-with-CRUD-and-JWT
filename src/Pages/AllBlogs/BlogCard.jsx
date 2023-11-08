@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import swal from "sweetalert";
 
 const BlogCard = ({ blogs }) => {
@@ -62,7 +63,9 @@ const BlogCard = ({ blogs }) => {
           </div>
           <p>{short_description.slice(0,250)}</p>
           <div className="card-actions justify-end">
+          <Link to={`/allBlogs/${_id}`}>
             <button className="btn bg-slate-800 text-white rounded-full">Details</button>
+            </Link>
             <button onClick={handleAddToWishlist} className="btn bg-gradient-to-r from-cyan-500 to-teal-500 text-white rounded-full">Wishlist</button>
           </div>
         </div>

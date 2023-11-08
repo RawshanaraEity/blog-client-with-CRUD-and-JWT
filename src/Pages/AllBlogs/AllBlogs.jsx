@@ -4,6 +4,7 @@ import Loading from "../../components/Loading";
 
 import BlogCard from "./BlogCard";
 import { useState } from "react";
+import Newslettter from "../Home/Newslettter";
 
 const AllBlogs = () => {
   const [filterBlogs, setFilterBlogs] = useState();
@@ -46,6 +47,7 @@ const AllBlogs = () => {
                   <BlogCard key={blogs._id} blogs={blogs}></BlogCard>
                 ))}
               </div>
+              <Newslettter></Newslettter>
             </div>
           ) : (
             <div>
