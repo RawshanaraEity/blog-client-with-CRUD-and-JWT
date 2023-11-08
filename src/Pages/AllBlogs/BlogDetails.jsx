@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import useBlogs from "../../Hooks/useBlogs";
 import Loading from "../../components/Loading";
 import { useContext } from "react";
@@ -29,7 +29,7 @@ const BlogDetails = () => {
     author_name,
     author_img,
   } = singleBlog;
-  // const { photo,name,brandName,type,price,rating} = singleProduct
+  
 
   return (
     <div className="py-10 bg-gradient-to-b from-[rgba(135,219,216,0.74)] ">
@@ -68,9 +68,11 @@ const BlogDetails = () => {
             <div className="card-actions justify-end">
               {
                 user?.email? 
+                <Link to={`/update/${_id}`}>
                 <button className="btn btn-outline rounded-full">
                 Update
-              </button> 
+              </button>
+                </Link> 
               : ""
               }
               
