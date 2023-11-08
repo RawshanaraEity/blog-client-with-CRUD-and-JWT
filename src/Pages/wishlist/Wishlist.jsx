@@ -16,8 +16,8 @@ const Wishlist = () => {
         }
     })
     console.log(result);
-
-    const data = result.data
+ const blogs = result.data
+   
     if (result.isLoading) {
         return <Loading></Loading>;
       }
@@ -25,10 +25,10 @@ const Wishlist = () => {
     return (
         <div>
              <h1 className="my-10 text-5xl text-center">My Wishlist</h1>
-             <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-5 lg:px-0">
-                {data.map((blogs) => (
-                  <WishlistCard key={blogs._id} blogs={blogs}></WishlistCard>
-                ))}
+             <div>
+                
+                  <WishlistCard blogs={blogs}></WishlistCard>
+              
               </div>
             
             <Newslettter></Newslettter>
