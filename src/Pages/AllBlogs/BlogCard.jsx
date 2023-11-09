@@ -15,7 +15,7 @@ const BlogCard = ({ blogs }) => {
     author_img,
   } = blogs;
 
-  // console.log(Object.keys(blogs).join(','))
+  console.log(blogs)
   const myblog = {title,
     image,
     category,
@@ -63,7 +63,7 @@ const BlogCard = ({ blogs }) => {
           </div>
           <p>{short_description.slice(0,250)}</p>
           <div className="card-actions justify-end">
-          <Link to={`/allBlogs/${_id}`}>
+          <Link to={`/details/${_id}`}>
             <button className="btn bg-slate-800 text-white rounded-full">Details</button>
             </Link>
             <button onClick={handleAddToWishlist} className="btn bg-gradient-to-r from-cyan-500 to-teal-500 text-white rounded-full">Wishlist</button>

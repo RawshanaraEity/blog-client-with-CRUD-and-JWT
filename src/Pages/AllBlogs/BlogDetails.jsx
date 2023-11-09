@@ -7,6 +7,7 @@ import { AuthContext } from "../../Provider/AuthProvider";
 const BlogDetails = () => {
   const { data, isLoading } = useBlogs();
   const {  user } = useContext(AuthContext);
+ 
   console.log(data);
   const { id } = useParams();
   console.log(id);
@@ -17,6 +18,8 @@ const BlogDetails = () => {
   if (isLoading) {
     return <Loading></Loading>;
   }
+
+
   const {
     _id,
     title,
@@ -27,7 +30,7 @@ const BlogDetails = () => {
     date,
     current_time,
     author_name,
-    author_img,
+    author_img
   } = singleBlog;
   
 

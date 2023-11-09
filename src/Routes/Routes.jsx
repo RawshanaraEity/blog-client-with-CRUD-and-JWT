@@ -32,18 +32,18 @@ const router = createBrowserRouter([
             element: <All></All>
         },
         {
-            path: '/allBlogs/:id',
+            
+            path: '/allBlogs/:category',
+            element: <AllBlogs></AllBlogs>
+            
+        },
+        {
+            path: '/details/:id',
             element: <BlogDetails></BlogDetails>
         },
         {
             path: '/update/:id',
             element: <UpdateBlog></UpdateBlog>
-        },
-        {
-            
-            path: '/allBlogs/:category',
-            element: <AllBlogs></AllBlogs>
-            
         },
         {
             path: '/featuredBlogs',

@@ -1,10 +1,10 @@
-
+import swal from "sweetalert";
 import Loading from "../../components/Loading";
 import useBlogs from "../../Hooks/useBlogs";
 
 
 const AddBlog = () => {
-    const {isLoading } = useBlogs();
+  const { isLoading } = useBlogs();
 
   if (isLoading) {
     return <Loading></Loading>;
@@ -51,7 +51,7 @@ const AddBlog = () => {
     };
     console.log(myData);
 
-    fetch('http://localhost:5000/blogs', {
+    fetch("http://localhost:5000/blogs", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -60,16 +60,20 @@ const AddBlog = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data)
-      })
+        console.log(data);
+        if(data.acknowledged){
+            swal("Congrats","Add Your Wishlist Successfully", "success");
+            
+        }
+      });
   };
 
-    return (
-        <div>
+  return (
+    <div>
       <div className=" bg-gradient-to-r from-[#37aca8bb] to-[rgba(82,164,197,0.83)]">
         <div className=" py-10">
           <h2 className="text-center text-5xl text-white font-semibold">
-            Update Your Blog
+            Add New Blog
           </h2>
         </div>
         <div className="">
@@ -108,6 +112,15 @@ const AddBlog = () => {
             </div>
             <br />
             <div className="flex flex-col md:flex-row gap-5">
+              {/* <select className="select  w-full select-bordered" >
+                <option disabled >
+                Select Your Category
+                </option>
+                <option>Technology</option>
+                <option>Travel</option>
+                <option>Food</option>
+                <option>Interior</option>
+              </select> */}
               <input
                 className="input w-full input-bordered"
                 type="text"
@@ -154,7 +167,7 @@ const AddBlog = () => {
         </div>
       </div>
     </div>
-    );
+  );
 };
 
 export default AddBlog;
