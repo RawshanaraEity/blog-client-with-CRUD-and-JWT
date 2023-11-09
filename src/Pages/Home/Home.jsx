@@ -12,6 +12,7 @@ const Home = () => {
             <RecentBlogs></RecentBlogs>
             <Newslettter></Newslettter>
             <Authors></Authors>
+            <hr />
             <ContactUs></ContactUs>
         </div>
     );
