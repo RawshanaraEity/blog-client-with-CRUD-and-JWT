@@ -11,6 +11,7 @@ import Register from "../Pages/Register/Register";
 import All from "../Pages/AllBlogs/All";
 import BlogDetails from "../Pages/AllBlogs/BlogDetails";
 import UpdateBlog from "../Pages/UpdateBlog/UpdateBlog";
+import PrivateRoute from "./privateRoute/PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -25,7 +26,9 @@ const router = createBrowserRouter([
         },
         {
             path: '/addBlog',
-            element: <AddBlog></AddBlog>
+            element: <PrivateRoute>
+                <AddBlog></AddBlog>
+            </PrivateRoute>
         },
         {
             path: '/allBlogs',
@@ -43,15 +46,21 @@ const router = createBrowserRouter([
         },
         {
             path: '/update/:id',
-            element: <UpdateBlog></UpdateBlog>
+            element: <PrivateRoute>
+                <UpdateBlog></UpdateBlog>
+            </PrivateRoute>
+             
         },
         {
             path: '/featuredBlogs',
             element: <FeaturedBlogs></FeaturedBlogs>
+          
         },
         {
             path: '/wishlist',
-            element: <Wishlist></Wishlist>
+            element: <PrivateRoute>
+                <Wishlist></Wishlist>
+            </PrivateRoute>
         },
         {
             path: '/login',

@@ -18,7 +18,7 @@ const Newslettter = () => {
 
   return (
     <div className="my-10">
-      <div className="hero px-10 h-96 bg-gradient-to-r from-teal-500  text-white">
+      <div className="hero px-10 lg:h-96  bg-gradient-to-r from-teal-500  text-white">
         <div className="hero-content flex-col lg:flex-row">
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold">

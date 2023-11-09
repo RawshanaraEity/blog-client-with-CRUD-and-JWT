@@ -2,6 +2,7 @@
 import useBlogs from "../../Hooks/useBlogs";
 
 import {  DataType, EditingMode, SortingMode, Table } from 'ka-table';
+import Newslettter from "../Home/Newslettter";
 
 
 function calculateWordCount(text) {
@@ -34,9 +35,9 @@ const FeaturedBlogs = () => {
 
 
   return (
-    <div className="bg-gradient-to-r from-[#74d3d0bb] to-[rgba(65,117,138,0.83)]">
-        <div className=" w-2/3 mx-auto py-10 text-white">
-      <h1 className="text-5xl font-semibold text-center my-10">Top 10 Featured Blogs</h1>
+    <div className=" bg-gradient-to-r from-[#74d3d0bb] to-[rgba(65,117,138,0.83)]">
+        <div className=" w-full md:w-2/3 lg:mx-auto py-10 text-white">
+      <h1 className="text-3xl md:text-5xl font-semibold text-center my-10">Top 10 Featured Blogs</h1>
       <hr className="mb-10"/>
 
 {/* ka-table */}
@@ -52,11 +53,7 @@ const FeaturedBlogs = () => {
       editingMode={EditingMode.Cell}
       rowKeyField={'id'}
       sortingMode={SortingMode.Single}
-      
-      
     />
-
-{/* ka */}
 
     </div>
     </div>

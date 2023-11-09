@@ -14,7 +14,7 @@ const Authors = () => {
         <div className="my-10">
             <h2 className="text-5xl font-semibold my-10 text-center">Our Authors</h2>
 
-          <div className=" flex justify-center items-center gap-10">
+          <div className=" grid grid-cols-1 lg:grid-cols-3 ml-24 md:ml-0 justify-center items-center gap-10">
           {
                 data?.slice(0,3).map(blog => (
                     <div key={blog._id}>

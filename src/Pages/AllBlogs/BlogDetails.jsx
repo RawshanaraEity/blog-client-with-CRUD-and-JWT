@@ -53,7 +53,7 @@ const BlogDetails = () => {
         <p className="text-base text-gray-600 font-semibold">Date: {date}</p>
       </div>
       <div className="py-10 px-5 lg:px-0">
-        <div className="w-2/3 mx-auto shadow-xl">
+        <div className="w-full md:w-2/3 mx-auto shadow-xl">
           <figure>
             <img src={image} className="h-[500px] w-full" alt="image" />
           </figure>

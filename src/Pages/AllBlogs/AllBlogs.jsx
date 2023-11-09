@@ -26,13 +26,13 @@ const AllBlogs = () => {
     <div>
       <h1 className="my-10 text-5xl text-center">All Blogs are here</h1>
       <div className="">
-        <div className="my-10 flex justify-center ">
+        <div className="my-10 flex justify-center items-center flex-col md:flex-row ">
           {data?.slice(0, 4).map((blog) => (
             <Link key={blog._id} to={`/allBlogs/${blog.category}`}>
               <button
                 onClick={() =>handleBlogs(blog.category)}
                 key={blog._id}
-                className="btn mr-2 bg-slate-800 text-white text-xl font-bold capitalize"
+                className="btn md:mr-2 bg-slate-800 text-white text-xl font-bold capitalize"
               >
                 {blog.category}
               </button>
