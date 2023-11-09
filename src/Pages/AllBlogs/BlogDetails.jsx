@@ -78,10 +78,6 @@ const BlogDetails = () => {
                 </Link> 
               : ""
               }
-              
-              <button className="btn bg-gradient-to-r from-cyan-500 to-teal-500 text-white rounded-full">
-                Wishlist
-              </button>
             </div>
           </div>
         </div>
