@@ -14,9 +14,9 @@ const Authors = () => {
         <div className="my-10">
             <h2 className="text-4xl md:text-5xl font-semibold my-10 text-center">Our Authors</h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 justify-items-center items-center gap-10 md:gap-0 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center items-center gap-10 md:gap-0 ">
           {
-                data?.slice(0,3).map(blog => (
+                data?.slice(0,4).map(blog => (
                     <div key={blog._id}>
                         <img src={blog.author_img} alt="" className="h-60 w-60 rounded-lg" />
                         <p className="text-black text-lg font-bold mt-4">{blog.author_name}</p>
