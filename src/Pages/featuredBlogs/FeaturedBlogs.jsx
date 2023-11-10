@@ -39,11 +39,12 @@ const FeaturedBlogs = () => {
     filterType: 'checkbox',
     selectableRowsHideCheckboxes: true,
     selectableRowsHeader: false,
+    responsive: 'standard',
   };
 
   return (
     <div className="bg-gradient-to-r from-[#74d3d0bb] to-[rgba(65,117,138,0.83)]">
-      <div className="w-full md:w-2/3 lg:mx-auto py-10 text-white">
+      <div className="w-full lg:w-2/3 lg:mx-auto px-5 lg:px-0 py-10 text-white">
         <h1 className="text-3xl md:text-5xl font-semibold text-center my-10">
           Top 10 Featured Blogs
         </h1>

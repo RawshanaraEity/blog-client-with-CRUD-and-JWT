@@ -64,7 +64,12 @@ const BlogDetails = () => {
             <p>{short_description}</p>
             <p>{long_description}</p>
             {
-              user?.email? <textarea className="textarea textarea-bordered textarea-sm my-10 text-slate-400" name="comment" placeholder="Add your comment here" id="" cols="30" rows="3"></textarea>
+              user?.email? <div className="flex flex-col">
+                <textarea className="textarea  textarea-bordered textarea-sm my-10 text-slate-400" name="comment" placeholder="Add your comment here" id="" cols="30" rows="3"></textarea>
+              <button className="btn w-24 btn-sm btn-accent text-white">
+              Add
+            </button>
+              </div>
               : ""
             }
             
