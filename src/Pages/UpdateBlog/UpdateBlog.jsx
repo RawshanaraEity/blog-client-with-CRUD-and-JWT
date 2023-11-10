@@ -70,7 +70,7 @@ const UpdateBlog = () => {
     };
     console.log(myData);
 
-    fetch(`http://localhost:5000/blogs/${_id}`, {
+    fetch(`https://blog-server-site-beta.vercel.app/blogs/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

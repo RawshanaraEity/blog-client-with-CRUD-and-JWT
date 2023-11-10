@@ -8,7 +8,7 @@ const Wishlist = () => {
   const result = useQuery({
     queryKey: ["wishlist"],
     queryFn: async () => {
-      const res = await fetch("http://localhost:5000/wishlist");
+      const res = await fetch("https://blog-server-site-beta.vercel.app/wishlist");
       return await res.json();
     },
   });

@@ -32,7 +32,7 @@ const BlogCard = ({ blogs }) => {
   const handleAddToWishlist = () =>{
        
 
-    fetch('http://localhost:5000/wishlist', {
+    fetch('https://blog-server-site-beta.vercel.app/wishlist', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'
