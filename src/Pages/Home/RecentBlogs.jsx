@@ -12,7 +12,7 @@ const RecentBlogs = () => {
 
   useEffect(() => {
     if (blogs) {
-      // Sort blogs by date in descending order (recent first)
+      // Sort blogs by date in descending order
       const sortedData = [...blogs].sort((a, b) => {
         const dateA = new Date(a.date + "T" + a.current_time);
         const dateB = new Date(b.date + "T" + b.current_time);

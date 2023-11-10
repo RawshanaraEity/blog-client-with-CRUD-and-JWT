@@ -10,7 +10,7 @@ function calculateWordCount(text) {
 const FeaturedBlogs = () => {
   const { data } = useBlogs();
 
-  // Sort blogs based on word count of long_description in descending order
+  // Sort blogs 
   const sortedBlogs = data?.sort((a, b) => {
     const wordCountA = calculateWordCount(a.long_description);
     const wordCountB = calculateWordCount(b.long_description);

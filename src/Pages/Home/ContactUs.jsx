@@ -46,8 +46,8 @@ const ContactUs = () => {
         
           <div className="card-body">
           <div className=" justify-end text-center mt-5 text-gray-400 font-semibold text-lg">
-                <p>brandShop@gmail.com</p> 
-              <p>biteOfBrands@gmail.com</p>
+                <p>InKly.co@gmail.com</p> 
+              <p>Blog.inKly@gmail.com</p>
 
         
             </div>
