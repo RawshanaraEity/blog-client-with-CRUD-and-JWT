@@ -7,7 +7,7 @@ import BlogCard from "../AllBlogs/BlogCard";
 const RecentBlogs = () => {
   const { data: blogs, isLoading } = useBlogs();
 
-  // State to hold sorted blogs
+  // sorted blogs
   const [sortedBlogs, setSortedBlogs] = useState([]);
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const RecentBlogs = () => {
 
   return (
     <div>
-      <h2 className="text-5xl font-semibold my-10 text-center">Our Recent Blogs</h2>
+      <h2 className="text-4xl md:text-5xl font-semibold my-10 text-center">Our Recent Blogs</h2>
       <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-5 lg:px-0">
         {sortedBlogs?.slice(0,6).map((blogs) => (
           <BlogCard key={blogs._id} blogs={blogs}></BlogCard>

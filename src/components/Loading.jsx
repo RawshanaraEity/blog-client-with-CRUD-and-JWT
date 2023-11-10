@@ -7,7 +7,7 @@ const Loading = () => {
       <SkeletonTheme
         baseColor="#2000"
         highlightColor="#444"
-        duration={0.5}
+        duration={1.5}
         enableAnimation={true}
         direction="ltr"
       >

@@ -95,7 +95,7 @@ const NavBar = () => {
               {navLinks}
             </ul>
           </div>
-          <div className="">
+          <div className=" ">
             <img src="/public/assets/logo.png" className="h-28" alt="" />
           </div>
         </div>

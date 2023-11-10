@@ -21,10 +21,10 @@ const Newslettter = () => {
       <div className="hero px-10 lg:h-96  bg-gradient-to-r from-teal-500  text-white">
         <div className="hero-content flex-col lg:flex-row">
           <div className="text-center lg:text-left">
-            <h1 className="text-5xl font-bold">
+            <h1 className="text-3xl md:text-5xl font-bold">
               Subscribe to InKly newsletter and stay updated.
             </h1>
-            <p className="py-6 text-2xl">
+            <p className="py-6 text-xl md:text-2xl">
               Do not miss anything. Get all the latest posts delivered straight
               to your inbox. It is free!
             </p>

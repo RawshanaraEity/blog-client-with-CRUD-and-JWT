@@ -7,7 +7,7 @@ const ContactUs = () => {
         <div>
             <div>
           <div className="">
-      <h2 className="text-6xl text-center text-black font-bold  p-14">Contact Us</h2>
+      <h2 className="text-4xl md:text-5xl text-center text-black font-bold  p-14">Contact Us</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-10 px-5 lg:px-0">
 
         <div className="card bg-base-100 border-2 border-teal-400  shadow-2xl">

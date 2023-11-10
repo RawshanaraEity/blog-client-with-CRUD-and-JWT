@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 
 
 
@@ -46,7 +46,7 @@ const handleRemove = (id) =>{
                       </div>
                       <p>{blog.short_description.slice(0,250)}</p>
                       <div className="card-actions justify-end">
-                      <Link >
+                      <Link>
                         <button className="btn bg-slate-800 text-white rounded-full">Details</button>
                         </Link>
                         <button onClick={() => handleRemove(blog._id)} className="btn btn-error text-white rounded-full">Remove</button>

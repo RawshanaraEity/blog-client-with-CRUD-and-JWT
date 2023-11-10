@@ -40,7 +40,7 @@ const BlogDetails = () => {
         <div className="badge p-4  badge-secondary outline-slate-400 flex justify-end">
           {category}
         </div>
-        <h2 className="text-4xl text-black font-semibold ">{title}</h2>
+        <h2 className="text-3xl md:text-4xl text-black font-semibold ">{title}</h2>
       </div>
 
       <div className="w-2/3 mx-auto mt-10 flex items-center gap-5">
@@ -55,7 +55,7 @@ const BlogDetails = () => {
       <div className="py-10 px-5 lg:px-0">
         <div className="w-full md:w-2/3 mx-auto shadow-xl">
           <figure>
-            <img src={image} className="h-[500px] w-full" alt="image" />
+            <img src={image} className="h-[300px] md:h-[500px] w-full" alt="image" />
           </figure>
           <div className="card-body ">
             <div className="flex flex-col justify-between">

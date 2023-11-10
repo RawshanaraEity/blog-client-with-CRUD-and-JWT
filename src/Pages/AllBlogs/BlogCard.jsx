@@ -1,3 +1,5 @@
+import { PhotoProvider, PhotoView } from "react-photo-view";
+import 'react-photo-view/dist/react-photo-view.css';
 import { Link } from "react-router-dom";
 import swal from "sweetalert";
 
@@ -51,15 +53,21 @@ const BlogCard = ({ blogs }) => {
   return (
     <div>
       <div className="card bg-base-100 shadow-xl">
-        <figure>
-          <img src={image} className="h-64 w-full" alt="image" />
+      <PhotoProvider>
+      <figure>
+        <PhotoView src={image}>
+        <img src={image} className="h-64 w-full" alt="image" />
+        </PhotoView>
+         
         </figure>
+            </PhotoProvider>
+      
         <div className="card-body h-96">
           <div className="flex flex-col justify-between">
           <h2 className="card-title">
             {title}
           </h2>
-          <div className="badge p-4  badge-outline outline-slate-400 flex justify-end">{category}</div>
+          <div className="badge p-4  badge-outline  flex justify-end">{category}</div>
           </div>
           <p>{short_description.slice(0,250)}</p>
           <div className="card-actions justify-end">
